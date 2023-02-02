@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    font-family: "Fira sans", sans-serif;;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: slategray;
+    justify-content: center;
+}
+
+header {
+    background-color: rgb(123, 231, 108);
+    margin: 2rem 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px green;
+}
+
+
+
+.main-bar {
+    display: flex;
+}
+
+.main-bar > * {
+    flex-basis: 100%;
+}
+
+.nav-list {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.nav-list:not(.title) {
+    padding-top: 0.25rem;
+}
+
+ol  {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.animal {
+    background-color: rgb(123, 231, 108);
+    box-shadow: 5px 5px green;
+
+
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: clamp(50%, 70%, 80%);
+}
+
+a {
+    cursor: pointer;
+}
+
+
+.content {
+    display: flex;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.active {
+    display: inline;
+    height: 1vw;
+}
+
+.content > * {
+    /*border: 1px solid;*/
+}
+
+.rank {
+    flex: 1 1 1%;
+    padding-top: 0.4rem;
+    
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
+.image {
+    flex: 1 1 19%;
+}
+
+.name {
+    flex: 1 1 30%;
+    padding-top: 0.25rem;
+}
+
+.score {
+    flex: 1 1 50%;
+    padding-top: 0.25rem;
+
+}
