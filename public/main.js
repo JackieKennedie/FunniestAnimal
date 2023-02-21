@@ -45,10 +45,10 @@ document.getElementById("send").addEventListener("click", async (e) => {
 
     console.log(user_score);
 
-    const data = {user_score};
+    const data = {user_score, _id: 1};
 
     const options = {
-        method: "POST",
+        method: "PUT",
         headers: {
             "Content-Type": "application/json"
         },
