@@ -94,5 +94,8 @@ a {
 .score {
     flex: 1 1 50%;
     padding-top: 0.25rem;
+}
 
+.score-num {
+    margin: 0.125em;
 }

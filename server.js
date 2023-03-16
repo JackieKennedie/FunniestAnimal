@@ -1,10 +1,5 @@
 // cd /Users/stephenwhetstone/Desktop/~/wo/html:css/animal_leaderboard
 
-
-const name = ["Horse", "Bear", "Monkey", "Penguin", "Turtle"];
-const image = ["🐴", "🐻", "🐵", "🐧", "🐢"];
-
-
 const { response } = require("express");
 const express = require("express");
 const datastore = require("nedb");
@@ -20,14 +15,13 @@ app.use(express.json({limit: "1mb"}));
 const database = new datastore("database.db");
 database.loadDatabase();
 
-//insertAnimal();
+insertAnimal();
 
 app.get("/api", (request, response) => {
     database.find({type:"animal"}, (err, data) => {
         response.json(data);
     });
 });
-
 
 app.put("/api", (request, response) => {
     let req = parseInt(request.body.user_score);
@@ -38,18 +32,18 @@ app.put("/api", (request, response) => {
         let new_votes = parseInt(data.votes) + 1;
         let new_score = total / new_votes;
         
-
-
         database.update({_id: id}, {$set: {score: new_score, votes: new_votes, total: total}}, (err, data) => {
         });
     });
-    response.json("🐧");
-
+    //response.json("🐧");
 });
 
 database.persistence.setAutocompactionInterval(5000);
 
 function insertAnimal() {
+    const name = ["Horse", "Bear", "Monkey", "Penguin", "Turtle"];
+    const image = ["🐴", "🐻", "🐵", "🐧", "🐢"];
+
     for(let i = 0; i < name.length; i++ ) {
         const doc = {
             type: "animal",
@@ -61,6 +55,6 @@ function insertAnimal() {
             _id: i + 1,
         };
     
-        database.insert(doc, (err, data)=>{})
+        database.insert(doc, (err, data)=>{});
     }
 }

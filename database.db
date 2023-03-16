@@ -1,5 +1,5 @@
-{"type":"animal","image":"🐴","name":"Horse","score":0,"total":0,"votes":0,"_id":1}
-{"type":"animal","image":"🐻","name":"Bear","score":0,"total":0,"votes":0,"_id":2}
-{"type":"animal","image":"🐵","name":"Monkey","score":0,"total":0,"votes":0,"_id":3}
-{"type":"animal","image":"🐧","name":"Penguin","score":0,"total":0,"votes":0,"_id":4}
-{"type":"animal","image":"🐢","name":"Turtle","score":0,"total":0,"votes":0,"_id":5}
+{"type":"animal","image":"🐴","name":"Horse","score":3,"total":6,"votes":2,"_id":1}
+{"type":"animal","image":"🐻","name":"Bear","score":3,"total":9,"votes":3,"_id":2}
+{"type":"animal","image":"🐵","name":"Monkey","score":3.6666666666666665,"total":11,"votes":3,"_id":3}
+{"type":"animal","image":"🐧","name":"Penguin","score":4,"total":12,"votes":3,"_id":4}
+{"type":"animal","image":"🐢","name":"Turtle","score":3,"total":6,"votes":2,"_id":5}
