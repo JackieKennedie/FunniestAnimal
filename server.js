@@ -15,7 +15,7 @@ app.use(express.json({limit: "1mb"}));
 const database = new datastore("database.db");
 database.loadDatabase();
 
-insertAnimal();
+//insertAnimal();
 
 app.get("/api", (request, response) => {
     database.find({type:"animal"}, (err, data) => {
